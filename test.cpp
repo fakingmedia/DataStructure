@@ -1,9 +1,10 @@
 #include "ChainTable.hpp"
+#include "Stack.hpp"
 #include <iostream>
 
 using namespace std;
 
-int main()
+void TestChainTable()
 {
 	LinkList<int>* table = new LinkList<int>();
 
@@ -20,6 +21,20 @@ int main()
 	cout << elem << endl;
 
 	delete table;
+}
+
+void TestStack()
+{
+	Stack<int> IntStack(20);
+	int a = 3;
+	cout << IntStack.StackEmpty() << endl;
+	cout << IntStack.Pop(a) << endl;
+	cout << IntStack.Push(a) << endl;
+}
+
+int main()
+{	
+	TestStack();
 
 	system("pause");
 	return 0;
