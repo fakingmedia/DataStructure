@@ -34,6 +34,7 @@ void TestStack()
 
 int main()
 {	
+	TestChainTable();
 	TestStack();
 
 	system("pause");
